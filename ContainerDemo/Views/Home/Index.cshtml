@@ -1,0 +1,14 @@
+﻿@model ContainerDemo.Models.HomePageModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <ul>
+        @foreach (var name in Model.TopNames)
+        {
+            <li>@name</li>
+        }
+    </ul>
+</div>
